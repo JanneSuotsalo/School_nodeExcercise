@@ -46,9 +46,9 @@ app.get("/", async (req, res) => {
 // temp test for cat & user creation
 app.post("/catCreate", async (req, res) => {
   const mycat = await cat.create({
-    name: "kittyTest",
+    name: "garfield",
     age: 7,
-    owner: "5e7e686ea2aa9705fc162250"
+    owner: "5e7fbda68145f5755226c36f"
   });
   res.send("cat created with id: " + mycat._id);
 });
